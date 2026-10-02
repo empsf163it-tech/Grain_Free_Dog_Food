@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="WildBowl Nutrition Lab. Complete ingredient transparency, macronutrient profiles, portion calculator, global ingredient sourcing, and 7-day transition guides.">
+  <title>Nutrition Science & Ingredients | WildBowl Grain-Free Dog Food</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <svg class="brand-paw" viewBox="0 0 40 40" width="36" height="36" fill="none" aria-hidden="true">
+          <circle cx="8" cy="14" r="3.5" fill="currentColor"/>
+          <circle cx="16" cy="9" r="3.5" fill="currentColor"/>
+          <circle cx="24" cy="9" r="3.5" fill="currentColor"/>
+          <circle cx="32" cy="14" r="3.5" fill="currentColor"/>
+          <circle cx="20" cy="26" r="6" fill="currentColor"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-title">WILDBOWL</span>
+          <small class="brand-sub">GRAIN-FREE DOG FOOD</small>
+        </span>
+      </a>
+      <nav class="nav-center">
+        <a href="index.html">Home</a>
+        <a href="products.html">Recipes</a>
+        <a href="nutrition.html" class="active">Nutrition</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Nutrition Lab</div>
+        <h1>Understand what's in the bowl.</h1>
+        <p>Complete ingredient transparency, bio-available proteins, and clear nutritional science. Every WildBowl recipe is formulated without compromise to match your dog's ancestral dietary needs.</p>
+      </div>
+    </section>
+
+    <!-- Interactive Ingredient & Recipe Explorer -->
+    <section class="section" id="ingredients">
+      <div class="container builder-grid">
+        <div class="builder-preview-card">
+          <div class="builder-img-wrap">
+            <img id="builder-img" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=85" alt="Selected recipe preview">
+            <span class="builder-tag" id="builder-recipe-tag">Wild Chicken Formula</span>
+          </div>
+          <div class="builder-stats">
+            <div class="builder-stat">
+              <span class="stat-label">Crude Protein</span>
+              <strong id="builder-val-protein">34%</strong>
+              <div class="stat-bar"><span id="builder-bar-protein" style="width: 85%;"></span></div>
+            </div>
+            <div class="builder-stat">
+              <span class="stat-label">Healthy Fats</span>
+              <strong id="builder-val-fat">18%</strong>
+              <div class="stat-bar"><span id="builder-bar-fat" style="width: 70%;"></span></div>
+            </div>
+            <div class="builder-stat">
+              <span class="stat-label">Crude Fibre</span>
+              <strong id="builder-val-fibre">4.5%</strong>
+              <div class="stat-bar"><span id="builder-bar-fibre" style="width: 45%;"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="builder-controls">
+          <div class="eyebrow">Formulation Lab</div>
+          <h2>Explore macronutrient profiles.</h2>
+          <p>Click any recipe below to examine its certified crude protein, healthy fats, and fiber balance.</p>
+
+          <div class="builder-opts">
+            <button type="button" class="builder-opt active" data-name="Wild Chicken Formula" data-protein="34%" data-protein-pct="85%" data-fat="18%" data-fat-pct="70%" data-fibre="4.5%" data-fibre-pct="45%" data-img="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=85">
+              <span class="opt-icon">🍗</span>
+              <span class="opt-text"><strong>Wild Chicken</strong><small>34% Protein · Adult Energy</small></span>
+            </button>
+            <button type="button" class="builder-opt" data-name="Wild Salmon Feast" data-protein="32%" data-protein-pct="80%" data-fat="20%" data-fat-pct="80%" data-fibre="4.0%" data-fibre-pct="40%" data-img="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?auto=format&fit=crop&w=900&q=85">
+              <span class="opt-icon">🐟</span>
+              <span class="opt-text"><strong>Wild Salmon</strong><small>32% Protein · Omega-3 Rich</small></span>
+            </button>
+            <button type="button" class="builder-opt" data-name="Wild Lamb Recipe" data-protein="30%" data-protein-pct="75%" data-fat="16%" data-fat-pct="65%" data-fibre="5.0%" data-fibre-pct="50%" data-img="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&q=85">
+              <span class="opt-icon">🥩</span>
+              <span class="opt-text"><strong>Wild Lamb</strong><small>30% Protein · Sensitive Stomach</small></span>
+            </button>
+            <button type="button" class="builder-opt" data-name="Puppy Growth Formula" data-protein="36%" data-protein-pct="90%" data-fat="22%" data-fat-pct="88%" data-fibre="3.5%" data-fibre-pct="35%" data-img="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=900&q=85">
+              <span class="opt-icon">🐶</span>
+              <span class="opt-text"><strong>Puppy Growth</strong><small>36% Growth Protein · DHA</small></span>
+            </button>
+          </div>
+          <a class="btn" href="products.html">Explore All Recipes →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW SECTION 1: Interactive Portion & Calorie Calculator -->
+    <section class="section" id="portion-calculator" style="background: rgba(23,59,50,0.03); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div class="about-grid" style="align-items: center;">
+          <div>
+            <div class="eyebrow">Smart Feeding Tool</div>
+            <h2>Interactive Portion & Calorie Calculator.</h2>
+            <p>Enter your dog's current weight and daily activity level to get an instant vet-approved feeding portion recommendation.</p>
+            <p>Every dog metabolic burn rate differs based on age, breed, and exercise. Use this tool as a starting benchmark for daily feeding.</p>
+          </div>
+
+          <div class="calc-card">
+            <div class="field">
+              <label>Dog Weight (lbs): <strong id="weight-num-label">25 lbs</strong></label>
+              <input type="range" id="calc-weight" min="5" max="120" value="25" style="width: 100%; cursor: pointer;">
+            </div>
+
+            <div class="field" style="margin-top: 18px;">
+              <label>Daily Activity Level</label>
+              <select id="calc-activity">
+                <option value="0.85">Low Activity / Senior / Lap Dog</option>
+                <option value="1.0" selected>Moderate Activity (1-2 walks daily)</option>
+                <option value="1.25">High Activity / Working / Agility Dog</option>
+              </select>
+            </div>
+
+            <div class="calc-result-box">
+              <span style="text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem; font-weight: 700; opacity: 0.9;">Recommended Daily Portion</span>
+              <strong id="calc-cups-result">1.2 Cups / Day</strong>
+              <small style="display: block; font-size: 0.85rem; opacity: 0.8;">Split into 2 meals (Morning & Evening)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Quality Standards -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Formulation Standards</div>
+            <h2>The WildBowl Purity Guarantee.</h2>
+          </div>
+          <p>Every bag produced adheres strictly to AAFCO Dog Food Nutrient Profiles for All Life Stages.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feat-icon">🥩</div>
+            <h4>Real Meat #1</h4>
+            <p>Deboned chicken, grass-fed lamb, and ocean salmon always serve as the primary ingredient.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon">🌾</div>
+            <h4>100% Grain-Free</h4>
+            <p>Zero corn, wheat, or soy fillers. Reduces digestive stress and prevents common food sensitivities.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon">🫐</div>
+            <h4>Superfood Blend</h4>
+            <p>Enriched with blueberries, spinach, and sweet potatoes for natural vitamins C, E, and beta-carotene.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feat-icon">🦠</div>
+            <h4>Live Probiotics</h4>
+            <p>Guaranteed 80 million CFU/lb of active probiotics added post-cook to ensure gut flora balance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW SECTION 2: Global Origin Sourcing Map & Transparency -->
+    <section class="section" style="background: rgba(247,243,232,0.6); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Global Ingredient Origins</div>
+            <h2>Where our ingredients come from.</h2>
+          </div>
+          <p>We source ingredients from trusted regional farms and fisheries committed to ethical, sustainable practices.</p>
+        </div>
+
+        <div class="sourcing-grid">
+          <div class="sourcing-card">
+            <div class="country-flag">🇳🇿</div>
+            <h4>New Zealand Lamb</h4>
+            <p>Pasture-raised, grass-fed lamb from sustainable South Island farms with zero hormone supplements.</p>
+          </div>
+          <div class="sourcing-card">
+            <div class="country-flag">🌊</div>
+            <h4>Alaskan Salmon</h4>
+            <p>Wild-caught Pacific salmon rich in natural EPA & DHA Omega-3 fatty acids for skin & coat joint health.</p>
+          </div>
+          <div class="sourcing-card">
+            <div class="country-flag">🐓</div>
+            <h4>USA Cage-Free Chicken</h4>
+            <p>Humanely raised poultry from local Midwest farms, processed fresh without rendering or artificial additives.</p>
+          </div>
+          <div class="sourcing-card">
+            <div class="country-flag">🍠</div>
+            <h4>Oregon Sweet Potatoes</h4>
+            <p>Organically grown sweet potatoes harvested from Willamette Valley soil for bio-available complex carbs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparative Macro Matrix -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Comparative Matrix</div>
+            <h2>Recipe nutrition side-by-side.</h2>
+          </div>
+          <p>Compare macronutrient percentages across our core recipe formulations.</p>
+        </div>
+
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Recipe Name</th>
+              <th>Life Stage</th>
+              <th>Crude Protein</th>
+              <th>Crude Fat</th>
+              <th>Key Specialty</th>
+              <th>Caloric Density</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Wild Chicken</strong></td>
+              <td>Adult</td>
+              <td>34.0%</td>
+              <td>18.0%</td>
+              <td>Lean Muscle Growth</td>
+              <td>3,820 kcal/kg</td>
+            </tr>
+            <tr>
+              <td><strong>Wild Salmon</strong></td>
+              <td>Active Adult</td>
+              <td>32.0%</td>
+              <td>20.0%</td>
+              <td>Omega-3 & Joint Support</td>
+              <td>3,910 kcal/kg</td>
+            </tr>
+            <tr>
+              <td><strong>Wild Lamb</strong></td>
+              <td>Sensitive Digestion</td>
+              <td>30.0%</td>
+              <td>16.0%</td>
+              <td>Single Animal Protein</td>
+              <td>3,750 kcal/kg</td>
+            </tr>
+            <tr>
+              <td><strong>Puppy Growth</strong></td>
+              <td>Puppy (0-12 mo)</td>
+              <td>36.0%</td>
+              <td>22.0%</td>
+              <td>Brain DHA & Bone Calcification</td>
+              <td>4,050 kcal/kg</td>
+            </tr>
+            <tr>
+              <td><strong>Senior Turkey</strong></td>
+              <td>Senior (7+ yrs)</td>
+              <td>28.0%</td>
+              <td>12.0%</td>
+              <td>Glucosamine & Reduced Calorie</td>
+              <td>3,480 kcal/kg</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 7-Day Feeding Transition Guide -->
+    <section class="section dark" id="guide">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Transition Guide</div>
+            <h2>7 Days to a happier, healthier gut.</h2>
+          </div>
+          <p>Switching dog foods too quickly can cause temporary digestive upset. Follow our 7-day gradual transition plan for smooth adaptation.</p>
+        </div>
+
+        <div class="transition-steps">
+          <div class="transition-step">
+            <span class="step-badge">Days 1 - 2</span>
+            <h4>25% WildBowl</h4>
+            <p>Mix 25% WildBowl kibble with 75% of your dog's current food.</p>
+            <div class="ratio-visual"><div class="ratio-fill" style="width: 25%;"></div></div>
+          </div>
+          <div class="transition-step">
+            <span class="step-badge">Days 3 - 4</span>
+            <h4>50% WildBowl</h4>
+            <p>Increase to a 50/50 balanced blend of old and new food.</p>
+            <div class="ratio-visual"><div class="ratio-fill" style="width: 50%;"></div></div>
+          </div>
+          <div class="transition-step">
+            <span class="step-badge">Days 5 - 6</span>
+            <h4>75% WildBowl</h4>
+            <p>Feed 75% WildBowl with only 25% of their old formula remaining.</p>
+            <div class="ratio-visual"><div class="ratio-fill" style="width: 75%;"></div></div>
+          </div>
+          <div class="transition-step">
+            <span class="step-badge">Day 7+</span>
+            <h4>100% WildBowl</h4>
+            <p>Your dog is now fully transitioned to pure, grain-free nutrition!</p>
+            <div class="ratio-visual"><div class="ratio-fill" style="width: 100%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nutrition FAQ Accordion -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Nutrition FAQ</div>
+            <h2>Common questions answered by vets.</h2>
+          </div>
+          <p>Have questions about grain-free diets or ingredient sourcing? Find answers below.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <button class="faq-question">Why feed a grain-free dog food?</button>
+            <div class="faq-answer">
+              Grain-free diets focus on high-protein animal sources and complex carbohydrates like sweet potatoes and peas. Many dogs experience reduced allergic skin reactions, firmer stools, and increased energy levels when eliminating corn, wheat, and soy fillers.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How do I determine the right portion size for my dog?</button>
+            <div class="faq-answer">
+              Portion size depends on your dog's weight, age, breed, and daily activity level. Use our Interactive Portion Calculator above or refer to the feeding table on each recipe page.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Is Wild Lamb recipe recommended for sensitive stomachs?</button>
+            <div class="faq-answer">
+              Yes! Wild Lamb uses a novel single animal protein source (grass-fed lamb) along with prebiotic chicory root and sweet potato fiber, making it ideal for dogs with poultry allergies or delicate digestions.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Are WildBowl recipes certified by AAFCO standards?</button>
+            <div class="faq-answer">
+              Yes, all WildBowl recipes are formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for All Life Stages, including growth of large-size dogs (70 lbs or more as an adult).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <svg class="brand-paw" viewBox="0 0 40 40" width="36" height="36" fill="none" aria-hidden="true">
+              <circle cx="8" cy="14" r="3.5" fill="currentColor"/>
+              <circle cx="16" cy="9" r="3.5" fill="currentColor"/>
+              <circle cx="24" cy="9" r="3.5" fill="currentColor"/>
+              <circle cx="32" cy="14" r="3.5" fill="currentColor"/>
+              <circle cx="20" cy="26" r="6" fill="currentColor"/>
+            </svg>
+            <span class="brand-text">
+              <span class="brand-title">WILDBOWL</span>
+              <small class="brand-sub">GRAIN-FREE DOG FOOD</small>
+            </span>
+          </a>
+          <p>Thoughtfully made grain-free dog food for people who want to understand what is in the bowl.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.936 9.936 0 0024 4.59z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="products.html">Recipes</a>
+          <a href="nutrition.html">Nutrition</a>
+          <a href="about.html">About</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="contact.html">Contact</a>
+          <a href="nutrition.html#guide">Feeding Guide</a>
+          <a href="contact.html">Product Support</a>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p class="footer-newsletter-text">Join our pack for recipes, guides & updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required aria-label="Email address">
+            <button type="submit" aria-label="Subscribe">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2026 WildBowl Grain-Free Dog Food.</span>
+        <span>Made for curious dog parents.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="flash"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
