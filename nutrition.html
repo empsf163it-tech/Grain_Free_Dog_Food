@@ -48,79 +48,150 @@
       </div>
     </section>
 
-    <!-- Interactive Ingredient & Recipe Explorer -->
+    <!-- Formulation & Macronutrient Profiles Grid -->
     <section class="section" id="ingredients">
-      <div class="container builder-grid">
-        <div class="builder-preview-card">
-          <div class="builder-img-wrap">
-            <img id="builder-img" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=85" alt="Selected recipe preview">
-            <span class="builder-tag" id="builder-recipe-tag">Wild Chicken Formula</span>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Formulation Lab</div>
+            <h2>Macronutrient & Ingredient Profiles</h2>
           </div>
-          <div class="builder-stats">
-            <div class="builder-stat">
-              <span class="stat-label">Crude Protein</span>
-              <strong id="builder-val-protein">34%</strong>
-              <div class="stat-bar"><span id="builder-bar-protein" style="width: 85%;"></span></div>
-            </div>
-            <div class="builder-stat">
-              <span class="stat-label">Healthy Fats</span>
-              <strong id="builder-val-fat">18%</strong>
-              <div class="stat-bar"><span id="builder-bar-fat" style="width: 70%;"></span></div>
-            </div>
-            <div class="builder-stat">
-              <span class="stat-label">Crude Fibre</span>
-              <strong id="builder-val-fibre">4.5%</strong>
-              <div class="stat-bar"><span id="builder-bar-fibre" style="width: 45%;"></span></div>
-            </div>
-          </div>
+          <p>Certified crude protein, healthy fat balance, and key functional ingredients across our four core grain-free formulations.</p>
         </div>
 
-        <div class="builder-controls">
-          <div class="eyebrow">Formulation Lab</div>
-          <h2>Explore macronutrient profiles.</h2>
-          <p>Click any recipe below to examine its certified crude protein, healthy fats, and fiber balance.</p>
-
-          <div class="builder-opts">
-            <button type="button" class="builder-opt active" data-name="Wild Chicken Formula" data-protein="34%" data-protein-pct="85%" data-fat="18%" data-fat-pct="70%" data-fibre="4.5%" data-fibre-pct="45%" data-img="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=900&q=85">
-              <span class="opt-icon">🍗</span>
-              <span class="opt-text"><strong>Wild Chicken</strong><small>34% Protein · Adult Energy</small></span>
-            </button>
-            <button type="button" class="builder-opt" data-name="Wild Salmon Feast" data-protein="32%" data-protein-pct="80%" data-fat="20%" data-fat-pct="80%" data-fibre="4.0%" data-fibre-pct="40%" data-img="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?auto=format&fit=crop&w=900&q=85">
-              <span class="opt-icon">🐟</span>
-              <span class="opt-text"><strong>Wild Salmon</strong><small>32% Protein · Omega-3 Rich</small></span>
-            </button>
-            <button type="button" class="builder-opt" data-name="Wild Lamb Recipe" data-protein="30%" data-protein-pct="75%" data-fat="16%" data-fat-pct="65%" data-fibre="5.0%" data-fibre-pct="50%" data-img="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=900&q=85">
-              <span class="opt-icon">🥩</span>
-              <span class="opt-text"><strong>Wild Lamb</strong><small>30% Protein · Sensitive Stomach</small></span>
-            </button>
-            <button type="button" class="builder-opt" data-name="Puppy Growth Formula" data-protein="36%" data-protein-pct="90%" data-fat="22%" data-fat-pct="88%" data-fibre="3.5%" data-fibre-pct="35%" data-img="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=900&q=85">
-              <span class="opt-icon">🐶</span>
-              <span class="opt-text"><strong>Puppy Growth</strong><small>36% Growth Protein · DHA</small></span>
-            </button>
+        <div class="macro-cards-grid">
+          <div class="macro-card">
+            <div class="macro-card-header">
+              <span class="macro-icon">🍗</span>
+              <div>
+                <span class="macro-badge">Adult Vitality</span>
+                <h3>Wild Chicken Formula</h3>
+              </div>
+            </div>
+            <p>Protein-led recipe for everyday lean muscle maintenance, active energy, and digestive health.</p>
+            <div class="macro-stats-row">
+              <div class="macro-stat">
+                <span class="stat-num">34%</span>
+                <span class="stat-lbl">Protein</span>
+              </div>
+              <div class="macro-stat">
+                <span class="stat-num">18%</span>
+                <span class="stat-lbl">Fat</span>
+              </div>
+              <div class="macro-stat">
+                <span class="stat-num">4.5%</span>
+                <span class="stat-lbl">Fiber</span>
+              </div>
+            </div>
+            <div class="macro-card-bottom">
+              <a class="btn alt" href="products.html#adult">Recipe</a>
+            </div>
           </div>
-          <a class="btn" href="products.html">Explore All Recipes →</a>
+
+          <div class="macro-card">
+            <div class="macro-card-header">
+              <span class="macro-icon">🐟</span>
+              <div>
+                <span class="macro-badge">Active & Omega-3</span>
+                <h3>Wild Salmon Feast</h3>
+              </div>
+            </div>
+            <p>Rich in Pacific Omega-3 fatty acids for athletic breeds needing high stamina, shiny coat, and joint flexibility.</p>
+            <div class="macro-stats-row">
+              <div class="macro-stat">
+                <span class="stat-num">32%</span>
+                <span class="stat-lbl">Protein</span>
+              </div>
+              <div class="macro-stat">
+                <span class="stat-num">20%</span>
+                <span class="stat-lbl">Fat</span>
+              </div>
+              <div class="macro-stat">
+                <span class="stat-num">4.0%</span>
+                <span class="stat-lbl">Fiber</span>
+              </div>
+            </div>
+            <div class="macro-card-bottom">
+              <a class="btn alt" href="products.html#adult">Recipe</a>
+            </div>
+          </div>
+
+          <div class="macro-card">
+            <div class="macro-card-header">
+              <span class="macro-icon">🥩</span>
+              <div>
+                <span class="macro-badge">Sensitive Digestion</span>
+                <h3>Wild Lamb Recipe</h3>
+              </div>
+            </div>
+            <p>Single animal protein with grass-fed lamb and sweet potato for delicate tummies or poultry sensitivities.</p>
+            <div class="macro-stats-row">
+              <div class="macro-stat">
+                <span class="stat-num">30%</span>
+                <span class="stat-lbl">Protein</span>
+              </div>
+              <div class="macro-stat">
+                <span class="stat-num">16%</span>
+                <span class="stat-lbl">Fat</span>
+              </div>
+              <div class="macro-stat">
+                <span class="stat-num">5.0%</span>
+                <span class="stat-lbl">Fiber</span>
+              </div>
+            </div>
+            <div class="macro-card-bottom">
+              <a class="btn alt" href="products.html#senior">Recipe</a>
+            </div>
+          </div>
+
+          <div class="macro-card">
+            <div class="macro-card-header">
+              <span class="macro-icon">🐶</span>
+              <div>
+                <span class="macro-badge">Growth & DHA</span>
+                <h3>Puppy Growth Formula</h3>
+              </div>
+            </div>
+            <p>Nutrient-dense growth formula fortified with DHA from wild salmon oil for brain development and bone strength.</p>
+            <div class="macro-stats-row">
+              <div class="macro-stat">
+                <span class="stat-num">36%</span>
+                <span class="stat-lbl">Protein</span>
+              </div>
+              <div class="macro-stat">
+                <span class="stat-num">22%</span>
+                <span class="stat-lbl">Fat</span>
+              </div>
+              <div class="macro-stat">
+                <span class="stat-num">3.5%</span>
+                <span class="stat-lbl">Fiber</span>
+              </div>
+            </div>
+            <div class="macro-card-bottom">
+              <a class="btn alt" href="products.html#puppy">Recipe</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- NEW SECTION 1: Interactive Portion & Calorie Calculator -->
-    <section class="section" id="portion-calculator" style="background: rgba(23,59,50,0.03); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+    <!-- Interactive Portion & Calorie Calculator -->
+    <section class="section" id="portion-calculator" style="background: rgba(23,59,50,0.03); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 50px 0;">
       <div class="container">
-        <div class="about-grid" style="align-items: center;">
+        <div class="about-grid" style="align-items: center; gap: 32px;">
           <div>
             <div class="eyebrow">Smart Feeding Tool</div>
-            <h2>Interactive Portion & Calorie Calculator.</h2>
-            <p>Enter your dog's current weight and daily activity level to get an instant vet-approved feeding portion recommendation.</p>
-            <p>Every dog metabolic burn rate differs based on age, breed, and exercise. Use this tool as a starting benchmark for daily feeding.</p>
+            <h2 style="margin: 6px 0 12px;">Interactive Portion & Calorie Calculator.</h2>
+            <p style="margin: 0; max-width: 480px; font-size: 1rem;">Select your dog's weight and activity level for an instant vet-approved daily feeding portion recommendation.</p>
           </div>
 
           <div class="calc-card">
             <div class="field">
-              <label>Dog Weight (lbs): <strong id="weight-num-label">25 lbs</strong></label>
-              <input type="range" id="calc-weight" min="5" max="120" value="25" style="width: 100%; cursor: pointer;">
+              <label>Dog Weight (lbs) <strong id="weight-num-label">25 lbs</strong></label>
+              <input type="range" id="calc-weight" min="5" max="120" value="25">
             </div>
 
-            <div class="field" style="margin-top: 18px;">
+            <div class="field">
               <label>Daily Activity Level</label>
               <select id="calc-activity">
                 <option value="0.85">Low Activity / Senior / Lap Dog</option>
@@ -130,9 +201,9 @@
             </div>
 
             <div class="calc-result-box">
-              <span style="text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.85rem; font-weight: 700; opacity: 0.9;">Recommended Daily Portion</span>
-              <strong id="calc-cups-result">1.2 Cups / Day</strong>
-              <small style="display: block; font-size: 0.85rem; opacity: 0.8;">Split into 2 meals (Morning & Evening)</small>
+              <span class="calc-result-lbl">Recommended Daily Portion</span>
+              <strong id="calc-cups-result" class="calc-result-val">1.2 Cups / Day</strong>
+              <span class="calc-result-sub">Split into 2 meals (Morning & Evening)</span>
             </div>
           </div>
         </div>
@@ -188,12 +259,12 @@
 
         <div class="sourcing-grid">
           <div class="sourcing-card">
-            <div class="country-flag">🇳🇿</div>
+            <div class="country-flag">🐑</div>
             <h4>New Zealand Lamb</h4>
             <p>Pasture-raised, grass-fed lamb from sustainable South Island farms with zero hormone supplements.</p>
           </div>
           <div class="sourcing-card">
-            <div class="country-flag">🌊</div>
+            <div class="country-flag">🐟</div>
             <h4>Alaskan Salmon</h4>
             <p>Wild-caught Pacific salmon rich in natural EPA & DHA Omega-3 fatty acids for skin & coat joint health.</p>
           </div>
@@ -222,60 +293,62 @@
           <p>Compare macronutrient percentages across our core recipe formulations.</p>
         </div>
 
-        <table class="spec-table">
-          <thead>
-            <tr>
-              <th>Recipe Name</th>
-              <th>Life Stage</th>
-              <th>Crude Protein</th>
-              <th>Crude Fat</th>
-              <th>Key Specialty</th>
-              <th>Caloric Density</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Wild Chicken</strong></td>
-              <td>Adult</td>
-              <td>34.0%</td>
-              <td>18.0%</td>
-              <td>Lean Muscle Growth</td>
-              <td>3,820 kcal/kg</td>
-            </tr>
-            <tr>
-              <td><strong>Wild Salmon</strong></td>
-              <td>Active Adult</td>
-              <td>32.0%</td>
-              <td>20.0%</td>
-              <td>Omega-3 & Joint Support</td>
-              <td>3,910 kcal/kg</td>
-            </tr>
-            <tr>
-              <td><strong>Wild Lamb</strong></td>
-              <td>Sensitive Digestion</td>
-              <td>30.0%</td>
-              <td>16.0%</td>
-              <td>Single Animal Protein</td>
-              <td>3,750 kcal/kg</td>
-            </tr>
-            <tr>
-              <td><strong>Puppy Growth</strong></td>
-              <td>Puppy (0-12 mo)</td>
-              <td>36.0%</td>
-              <td>22.0%</td>
-              <td>Brain DHA & Bone Calcification</td>
-              <td>4,050 kcal/kg</td>
-            </tr>
-            <tr>
-              <td><strong>Senior Turkey</strong></td>
-              <td>Senior (7+ yrs)</td>
-              <td>28.0%</td>
-              <td>12.0%</td>
-              <td>Glucosamine & Reduced Calorie</td>
-              <td>3,480 kcal/kg</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>Recipe Name</th>
+                <th>Life Stage</th>
+                <th>Crude Protein</th>
+                <th>Crude Fat</th>
+                <th>Key Specialty</th>
+                <th>Caloric Density</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Wild Chicken</strong></td>
+                <td>Adult</td>
+                <td>34.0%</td>
+                <td>18.0%</td>
+                <td>Lean Muscle Growth</td>
+                <td>3,820 kcal/kg</td>
+              </tr>
+              <tr>
+                <td><strong>Wild Salmon</strong></td>
+                <td>Active Adult</td>
+                <td>32.0%</td>
+                <td>20.0%</td>
+                <td>Omega-3 & Joint Support</td>
+                <td>3,910 kcal/kg</td>
+              </tr>
+              <tr>
+                <td><strong>Wild Lamb</strong></td>
+                <td>Sensitive Digestion</td>
+                <td>30.0%</td>
+                <td>16.0%</td>
+                <td>Single Animal Protein</td>
+                <td>3,750 kcal/kg</td>
+              </tr>
+              <tr>
+                <td><strong>Puppy Growth</strong></td>
+                <td>Puppy (0-12 mo)</td>
+                <td>36.0%</td>
+                <td>22.0%</td>
+                <td>Brain DHA & Bone Calcification</td>
+                <td>4,050 kcal/kg</td>
+              </tr>
+              <tr>
+                <td><strong>Senior Turkey</strong></td>
+                <td>Senior (7+ yrs)</td>
+                <td>28.0%</td>
+                <td>12.0%</td>
+                <td>Glucosamine & Reduced Calorie</td>
+                <td>3,480 kcal/kg</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -401,7 +474,7 @@
           <p class="footer-newsletter-text">Join our pack for recipes, guides & updates.</p>
           <form class="newsletter-form">
             <input type="email" placeholder="Enter your email" required aria-label="Email address">
-            <button type="submit" aria-label="Subscribe">→</button>
+            <button type="submit" aria-label="Subscribe">Subscribe</button>
           </form>
         </div>
       </div>
@@ -412,6 +485,11 @@
     </div>
   </footer>
 
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
   <div class="flash"></div>
   <script src="js/main.js"></script>
 </body>

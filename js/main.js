@@ -87,11 +87,15 @@ document.addEventListener("DOMContentLoaded",()=>{
   const calcWeightInput = document.querySelector("#calc-weight");
   const calcActivitySelect = document.querySelector("#calc-activity");
   const calcResultDisplay = document.querySelector("#calc-cups-result");
+  const calcWeightLabel = document.querySelector("#weight-num-label");
 
   function updateCalculator() {
     if(!calcWeightInput || !calcResultDisplay) return;
     const weight = parseFloat(calcWeightInput.value) || 20;
     const activity = calcActivitySelect ? parseFloat(calcActivitySelect.value) : 1.0;
+    if(calcWeightLabel) {
+      calcWeightLabel.textContent = weight + " lbs";
+    }
     // Base formula: approx 0.05 cups per lb * activity multiplier
     let cups = (weight * 0.048 * activity).toFixed(1);
     if(cups < 0.5) cups = 0.5;
@@ -104,4 +108,31 @@ document.addEventListener("DOMContentLoaded",()=>{
   if(calcActivitySelect) {
     calcActivitySelect.addEventListener("change", updateCalculator);
   }
+
+  // Back to Top Button Handler
+  let backToTopBtn = document.querySelector("#back-to-top");
+  if (!backToTopBtn) {
+    backToTopBtn = document.createElement("button");
+    backToTopBtn.id = "back-to-top";
+    backToTopBtn.className = "back-to-top";
+    backToTopBtn.setAttribute("aria-label", "Back to top");
+    backToTopBtn.setAttribute("title", "Back to top");
+    backToTopBtn.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>`;
+    document.body.appendChild(backToTopBtn);
+  }
+
+  const toggleBackToTop = () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add("visible");
+    } else {
+      backToTopBtn.classList.remove("visible");
+    }
+  };
+
+  window.addEventListener("scroll", toggleBackToTop, { passive: true });
+  toggleBackToTop();
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
